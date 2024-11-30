@@ -1,0 +1,93 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#title {
+    font-family: Papyrus;
+
+}
+
+h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+img {
+    max-width: 90%;
+    height: auto;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: red;
+}
+
+
+#popularSubs {
+    font-family: Papyrus;
+    display: flex; /* Makes it flexible for alignment */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    flex-wrap: wrap; /* Ensures content wraps if necessary */
+    margin: auto; /* Allows the div to center within its container */
+    text-align: center; /* Ensures text inside links is centered */
+    gap: 15px;
+}
+
+hr {
+    border-color: #b40505;
+    width: auto;
+}
+
+#main-header {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#chuck {
+    width: 64px;
+    height: auto;
+    margin-bottom: 10px; /* Adjust this to control the space between the image and h1 */
+}
+
+#main-header h1 {
+    margin-top: 10px; /* Optional: adds space above the h1 if needed */
+}
+
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar-track {
+    background: #1E1E1E; /* Dark grey color for track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cc3838; /* Medium grey color for the scrollbar */
+}
+
+::-webkit-scrollbar {
+    width: 12px; /* Width of the vertical scrollbar */
+    height: 12px; /* Height of the horizontal scrollbar */
+}
+
+#sus{
+    color: red;
+}

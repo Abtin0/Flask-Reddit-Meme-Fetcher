@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Meme Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='fav.jpeg') }}">
+  </head>
+  <body>
+    <header id="main-header">
+      <img src="{{ url_for('static', filename='fav.jpeg') }}" alt="Chuck" id="chuck" />
+      <h1>Reddit Meme Fetcher</h1>
+    </header>
+    <hr />
+    <h1 id="title">{{title}}</h1>
+    <h3>(Scroll for How to Use)</h3>
+    <img src="{{meme_pic}}" style="height: 400px; width: auto;" />
+    <p>current subreddit: r/{{subreddit}}</p>
+    <br />
+    <h3>Popular Subreddits:</h3>
+    <div id="popularSubs">
+      <a href="{{ url_for('dynamic_route', subreddit='memes') }}">r/memes</a>
+      <p>•</p>
+      <a href="{{ url_for('dynamic_route', subreddit='okbuddychicanery') }}">r/okbuddychicanery</a>
+      <p>•</p>
+      <a href="{{ url_for('dynamic_route', subreddit='lies') }}">r/lies</a>
+      <p>•</p>
+      <a href="{{ url_for('dynamic_route', subreddit='okbuddyretard') }}">r/okbuddyretard</a>
+      <p>•</p>
+      <a href="{{ url_for('dynamic_route', subreddit='BatmanArkham') }}">r/BatmanArkham</a>
+      <p>•</p>
+      <a href="{{ url_for('dynamic_route', subreddit='shitposting') }}">r/shitposting</a>
+    </div>
+    <br />
+    <h1>How to use:</h1>
+    <p>
+      To use the meme website, simply type the name of any subreddit (e.g., "memes" or "dankmemes")<br />
+      into the search bar or URL field, after the website name. Once you enter the subreddit name, <br />
+      the page will load a collection of popular memes from that subreddit.<br>
+      Example: abtin.pythonanywhere.com/<u style="color: red">sus</u>
+    </p>
+  </body>
+</html>
